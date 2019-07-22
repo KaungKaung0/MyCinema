@@ -54,6 +54,7 @@
     <Compile Include="Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
+    <Compile Include="Sale.cs" />
     <Compile Include="Seat.cs">
       <SubType>Form</SubType>
     </Compile>

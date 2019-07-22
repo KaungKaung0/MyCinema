@@ -51,6 +51,7 @@
             this.ShowDateLabel = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.Voucher = new System.Windows.Forms.Label();
+            this.btnBackDash = new System.Windows.Forms.Button();
             this.SelectTimePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -70,9 +71,9 @@
             this.SelectTimePanel.Controls.Add(this.ThirdTime);
             this.SelectTimePanel.Controls.Add(this.SecondTime);
             this.SelectTimePanel.Controls.Add(this.FirstTime);
-            this.SelectTimePanel.Location = new System.Drawing.Point(12, 12);
+            this.SelectTimePanel.Location = new System.Drawing.Point(12, 38);
             this.SelectTimePanel.Name = "SelectTimePanel";
-            this.SelectTimePanel.Size = new System.Drawing.Size(287, 426);
+            this.SelectTimePanel.Size = new System.Drawing.Size(287, 400);
             this.SelectTimePanel.TabIndex = 1;
             // 
             // pictureBox1
@@ -182,9 +183,9 @@
             this.CheckPanel.Controls.Add(this.ShowDateLabel);
             this.CheckPanel.Controls.Add(this.label5);
             this.CheckPanel.Controls.Add(this.Voucher);
-            this.CheckPanel.Location = new System.Drawing.Point(305, 12);
+            this.CheckPanel.Location = new System.Drawing.Point(305, 38);
             this.CheckPanel.Name = "CheckPanel";
-            this.CheckPanel.Size = new System.Drawing.Size(463, 426);
+            this.CheckPanel.Size = new System.Drawing.Size(463, 400);
             this.CheckPanel.TabIndex = 3;
             // 
             // TotalPrice
@@ -212,7 +213,7 @@
             // btnSold
             // 
             this.btnSold.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSold.Location = new System.Drawing.Point(365, 381);
+            this.btnSold.Location = new System.Drawing.Point(365, 355);
             this.btnSold.Name = "btnSold";
             this.btnSold.Size = new System.Drawing.Size(89, 40);
             this.btnSold.TabIndex = 9;
@@ -318,11 +319,21 @@
             this.Voucher.TabIndex = 0;
             this.Voucher.Text = "Ticket";
             // 
+            // btnBackDash
+            // 
+            this.btnBackDash.Location = new System.Drawing.Point(693, 9);
+            this.btnBackDash.Name = "btnBackDash";
+            this.btnBackDash.Size = new System.Drawing.Size(75, 23);
+            this.btnBackDash.TabIndex = 89;
+            this.btnBackDash.Text = "Dashboard";
+            this.btnBackDash.UseVisualStyleBackColor = true;
+            // 
             // Time
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(780, 450);
+            this.Controls.Add(this.btnBackDash);
             this.Controls.Add(this.CheckPanel);
             this.Controls.Add(this.SelectTimePanel);
             this.Name = "Time";
@@ -363,5 +374,6 @@
         private System.Windows.Forms.Label ShowDateLabel;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label Voucher;
+        private System.Windows.Forms.Button btnBackDash;
     }
 }
