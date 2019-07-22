@@ -18,7 +18,12 @@ namespace MyCinema
 
         private void Home_Load(object sender, EventArgs e)
         {
-            picMovOne.Image = Image.FromFile()
+            picMovOne.Image = Image.FromFile(@"D:\MyCinema\Poster\Jisoo.jpg");
+        }
+
+        private void PicMovOne_Click(object sender, EventArgs e)
+        {
+          
         }
     }
 }

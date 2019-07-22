@@ -48,7 +48,7 @@
             this.lblShowingNow.Name = "lblShowingNow";
             this.lblShowingNow.Size = new System.Drawing.Size(776, 55);
             this.lblShowingNow.TabIndex = 0;
-            this.lblShowingNow.Text = "Showing Now";
+            this.lblShowingNow.Text = "Now Showing";
             this.lblShowingNow.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // panel1
@@ -71,14 +71,17 @@
             this.picMovOne.Location = new System.Drawing.Point(25, 128);
             this.picMovOne.Name = "picMovOne";
             this.picMovOne.Size = new System.Drawing.Size(198, 283);
+            this.picMovOne.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picMovOne.TabIndex = 2;
             this.picMovOne.TabStop = false;
+            this.picMovOne.Click += new System.EventHandler(this.PicMovOne_Click);
             // 
             // picMovTwo
             // 
             this.picMovTwo.Location = new System.Drawing.Point(288, 128);
             this.picMovTwo.Name = "picMovTwo";
             this.picMovTwo.Size = new System.Drawing.Size(198, 283);
+            this.picMovTwo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picMovTwo.TabIndex = 3;
             this.picMovTwo.TabStop = false;
             // 
@@ -87,6 +90,7 @@
             this.picMovThree.Location = new System.Drawing.Point(549, 128);
             this.picMovThree.Name = "picMovThree";
             this.picMovThree.Size = new System.Drawing.Size(198, 283);
+            this.picMovThree.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picMovThree.TabIndex = 4;
             this.picMovThree.TabStop = false;
             // 
