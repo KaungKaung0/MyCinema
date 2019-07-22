@@ -28,97 +28,132 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblShowingNow = new System.Windows.Forms.Label();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.picMovOne = new System.Windows.Forms.PictureBox();
-            this.picMovTwo = new System.Windows.Forms.PictureBox();
-            this.picMovThree = new System.Windows.Forms.PictureBox();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picMovOne)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picMovTwo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picMovThree)).BeginInit();
             this.SuspendLayout();
-            // 
-            // lblShowingNow
-            // 
-            this.lblShowingNow.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblShowingNow.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblShowingNow.Location = new System.Drawing.Point(-1, 18);
-            this.lblShowingNow.Name = "lblShowingNow";
-            this.lblShowingNow.Size = new System.Drawing.Size(776, 55);
-            this.lblShowingNow.TabIndex = 0;
-            this.lblShowingNow.Text = "Now Showing";
-            this.lblShowingNow.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // panel1
             // 
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.AutoSize = true;
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.picMovThree);
-            this.panel1.Controls.Add(this.picMovTwo);
-            this.panel1.Controls.Add(this.picMovOne);
-            this.panel1.Controls.Add(this.lblShowingNow);
+            this.panel1.Controls.Add(this.button4);
+            this.panel1.Controls.Add(this.button3);
+            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(780, 426);
-            this.panel1.TabIndex = 1;
+            this.panel1.Size = new System.Drawing.Size(813, 426);
+            this.panel1.TabIndex = 0;
             // 
-            // picMovOne
+            // button4
             // 
-            this.picMovOne.Location = new System.Drawing.Point(25, 128);
-            this.picMovOne.Name = "picMovOne";
-            this.picMovOne.Size = new System.Drawing.Size(198, 283);
-            this.picMovOne.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picMovOne.TabIndex = 2;
-            this.picMovOne.TabStop = false;
-            this.picMovOne.Click += new System.EventHandler(this.PicMovOne_Click);
+            this.button4.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.SystemColors.Window;
+            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
+            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button4.Location = new System.Drawing.Point(409, 208);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(346, 126);
+            this.button4.TabIndex = 4;
+            this.button4.Text = "Manage Staff";
+            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button4.UseVisualStyleBackColor = false;
             // 
-            // picMovTwo
+            // button3
             // 
-            this.picMovTwo.Location = new System.Drawing.Point(288, 128);
-            this.picMovTwo.Name = "picMovTwo";
-            this.picMovTwo.Size = new System.Drawing.Size(198, 283);
-            this.picMovTwo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picMovTwo.TabIndex = 3;
-            this.picMovTwo.TabStop = false;
+            this.button3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(140)))), ((int)(((byte)(118)))));
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.SystemColors.Window;
+            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button3.Location = new System.Drawing.Point(57, 208);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(346, 126);
+            this.button3.TabIndex = 3;
+            this.button3.Text = "Monthly Report";
+            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button3.UseVisualStyleBackColor = false;
             // 
-            // picMovThree
+            // button2
             // 
-            this.picMovThree.Location = new System.Drawing.Point(549, 128);
-            this.picMovThree.Name = "picMovThree";
-            this.picMovThree.Size = new System.Drawing.Size(198, 283);
-            this.picMovThree.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picMovThree.TabIndex = 4;
-            this.picMovThree.TabStop = false;
+            this.button2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(94)))), ((int)(((byte)(42)))));
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.SystemColors.Window;
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button2.Location = new System.Drawing.Point(409, 76);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(346, 126);
+            this.button2.TabIndex = 2;
+            this.button2.Text = "Manage Movie";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // button1
+            // 
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(172)))), ((int)(((byte)(79)))), ((int)(((byte)(1)))));
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.Window;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.Location = new System.Drawing.Point(57, 76);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(346, 126);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Sale Ticket";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(268, 42);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(345, 31);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "CHOOSE YOUT OPTIONS";
             // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(837, 450);
             this.Controls.Add(this.panel1);
             this.Name = "Home";
-            this.Text = "MyCinema";
-            this.Load += new System.EventHandler(this.Home_Load);
+            this.Text = "Home";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.picMovOne)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picMovTwo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picMovThree)).EndInit();
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Label lblShowingNow;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox picMovOne;
-        private System.Windows.Forms.PictureBox picMovThree;
-        private System.Windows.Forms.PictureBox picMovTwo;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }
-

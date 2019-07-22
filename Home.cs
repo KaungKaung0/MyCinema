@@ -16,14 +16,23 @@ namespace MyCinema
             InitializeComponent();
         }
 
-        private void Home_Load(object sender, EventArgs e)
+        private void Button1_Click(object sender, EventArgs e)
         {
-            picMovOne.Image = Image.FromFile(@"D:\MyCinema\Poster\Jisoo.jpg");
+           OpenView("saleticket");
         }
-
-        private void PicMovOne_Click(object sender, EventArgs e)
+        private void OpenView(string view)
         {
-          
+            if(view == "saleticket")
+            {
+                System.Threading.Thread t = new System.Threading.Thread(new System.Threading.ThreadStart(SaleView));
+                t.Start();
+                this.Close();
+            }
+            
+        }
+        private static void SaleView()
+        {
+            Application.Run(new SelectMovie());
         }
     }
 }
