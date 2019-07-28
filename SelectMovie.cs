@@ -73,7 +73,7 @@ namespace MyCinema
         }
         private static void OpenTime()
         {
-            Application.Run(new Time());
+            Application.Run(new SelectTime());
         }
     }
 }

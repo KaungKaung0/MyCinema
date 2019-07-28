@@ -1,6 +1,6 @@
 ﻿namespace MyCinema
 {
-    partial class Time
+    partial class SelectTime
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Time));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SelectTime));
             this.SelectTimePanel = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -65,7 +65,6 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.SelectTimePanel.Controls.Add(this.pictureBox1);
             this.SelectTimePanel.Controls.Add(this.pictureBox2);
-            this.SelectTimePanel.Controls.Add(this.BackToMovieSelect);
             this.SelectTimePanel.Controls.Add(this.label6);
             this.SelectTimePanel.Controls.Add(this.dateTimePicker1);
             this.SelectTimePanel.Controls.Add(this.ThirdTime);
@@ -100,7 +99,7 @@
             // 
             // BackToMovieSelect
             // 
-            this.BackToMovieSelect.Location = new System.Drawing.Point(9, 7);
+            this.BackToMovieSelect.Location = new System.Drawing.Point(12, 9);
             this.BackToMovieSelect.Name = "BackToMovieSelect";
             this.BackToMovieSelect.Size = new System.Drawing.Size(75, 23);
             this.BackToMovieSelect.TabIndex = 10;
@@ -328,15 +327,16 @@
             this.btnBackDash.Text = "Dashboard";
             this.btnBackDash.UseVisualStyleBackColor = true;
             // 
-            // Time
+            // SelectTime
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(780, 450);
             this.Controls.Add(this.btnBackDash);
             this.Controls.Add(this.CheckPanel);
+            this.Controls.Add(this.BackToMovieSelect);
             this.Controls.Add(this.SelectTimePanel);
-            this.Name = "Time";
+            this.Name = "SelectTime";
             this.Text = "Time";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Time_Load);

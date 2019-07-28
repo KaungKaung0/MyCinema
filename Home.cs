@@ -28,11 +28,26 @@ namespace MyCinema
                 t.Start();
                 this.Close();
             }
+            else if(view == "moviedb")
+            {
+                System.Threading.Thread t = new System.Threading.Thread(new System.Threading.ThreadStart(MovieDB));
+                t.Start();
+                this.Close();
+            }
             
+        }
+        private static void MovieDB()
+        {
+            Application.Run(new ManageMovie());
         }
         private static void SaleView()
         {
             Application.Run(new SelectMovie());
+        }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            OpenView("moviedb");
         }
     }
 }

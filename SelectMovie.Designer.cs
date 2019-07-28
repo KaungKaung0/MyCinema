@@ -30,10 +30,10 @@
         {
             this.lblShowingNow = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnExit = new System.Windows.Forms.Button();
             this.picMovThree = new System.Windows.Forms.PictureBox();
             this.picMovTwo = new System.Windows.Forms.PictureBox();
             this.picMovOne = new System.Windows.Forms.PictureBox();
-            this.btnExit = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picMovThree)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picMovTwo)).BeginInit();
@@ -70,8 +70,19 @@
             this.panel1.Size = new System.Drawing.Size(780, 426);
             this.panel1.TabIndex = 1;
             // 
+            // btnExit
+            // 
+            this.btnExit.Location = new System.Drawing.Point(3, 3);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(75, 23);
+            this.btnExit.TabIndex = 5;
+            this.btnExit.Text = "Exit";
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.BtnExit_Click);
+            // 
             // picMovThree
             // 
+            this.picMovThree.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.picMovThree.Location = new System.Drawing.Point(549, 128);
             this.picMovThree.Name = "picMovThree";
             this.picMovThree.Size = new System.Drawing.Size(198, 283);
@@ -82,6 +93,7 @@
             // 
             // picMovTwo
             // 
+            this.picMovTwo.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.picMovTwo.Location = new System.Drawing.Point(288, 128);
             this.picMovTwo.Name = "picMovTwo";
             this.picMovTwo.Size = new System.Drawing.Size(198, 283);
@@ -92,6 +104,7 @@
             // 
             // picMovOne
             // 
+            this.picMovOne.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.picMovOne.Location = new System.Drawing.Point(25, 128);
             this.picMovOne.Name = "picMovOne";
             this.picMovOne.Size = new System.Drawing.Size(198, 283);
@@ -99,16 +112,6 @@
             this.picMovOne.TabIndex = 2;
             this.picMovOne.TabStop = false;
             this.picMovOne.Click += new System.EventHandler(this.PicMovOne_Click);
-            // 
-            // btnExit
-            // 
-            this.btnExit.Location = new System.Drawing.Point(3, 3);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(75, 23);
-            this.btnExit.TabIndex = 5;
-            this.btnExit.Text = "Exit";
-            this.btnExit.UseVisualStyleBackColor = true;
-            this.btnExit.Click += new System.EventHandler(this.BtnExit_Click);
             // 
             // SelectMovie
             // 

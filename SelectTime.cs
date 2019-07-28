@@ -9,10 +9,10 @@ using System.Windows.Forms;
 
 namespace MyCinema
 {
-    public partial class Time : Form
+    public partial class SelectTime : Form
     {
         public static string selected_time, date;
-        public Time()
+        public SelectTime()
         {
             InitializeComponent();
         }
@@ -25,6 +25,7 @@ namespace MyCinema
         private void Time_Load(object sender, EventArgs e)
         {
             MovieLabel.Text = SelectMovie.selected_movie;
+            ShowDateLabel.Text = dateTimePicker1.Text;
         }
 
         private void DateTimePicker1_ValueChanged(object sender, EventArgs e)
@@ -34,7 +35,7 @@ namespace MyCinema
 
         private void FirstTime_Click(object sender, EventArgs e)
         {
-            selected_time = SecondTime.Text;
+            selected_time = FirstTime.Text;
             date = dateTimePicker1.Text;
             CloseAndOpen("Seat");
         }
@@ -48,7 +49,7 @@ namespace MyCinema
 
         private void ThirdTime_Click(object sender, EventArgs e)
         {
-            selected_time = SecondTime.Text;
+            selected_time = ThirdTime.Text;
             date = dateTimePicker1.Text;
             CloseAndOpen("Seat");
         }
@@ -71,7 +72,7 @@ namespace MyCinema
         }
         private static void SeatView()
         {
-            Application.Run(new Seat());
+            Application.Run(new SelectSeat());
         }
         private static void MovieView()
         {

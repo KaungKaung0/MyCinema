@@ -54,11 +54,18 @@
     <Compile Include="Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
-    <Compile Include="Seat.cs">
+    <Compile Include="ManageMovie.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Seat.Designer.cs">
-      <DependentUpon>Seat.cs</DependentUpon>
+    <Compile Include="ManageMovie.Designer.cs">
+      <DependentUpon>ManageMovie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sale.cs" />
+    <Compile Include="SelectSeat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectSeat.Designer.cs">
+      <DependentUpon>SelectSeat.cs</DependentUpon>
     </Compile>
     <Compile Include="SelectMovie.cs">
       <SubType>Form</SubType>
@@ -75,17 +82,20 @@
     <Compile Include="Start.Designer.cs">
       <DependentUpon>Start.cs</DependentUpon>
     </Compile>
-    <Compile Include="Time.cs">
+    <Compile Include="SelectTime.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Time.Designer.cs">
-      <DependentUpon>Time.cs</DependentUpon>
+    <Compile Include="SelectTime.Designer.cs">
+      <DependentUpon>SelectTime.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Seat.resx">
-      <DependentUpon>Seat.cs</DependentUpon>
+    <EmbeddedResource Include="ManageMovie.resx">
+      <DependentUpon>ManageMovie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectSeat.resx">
+      <DependentUpon>SelectSeat.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SelectMovie.resx">
       <DependentUpon>SelectMovie.cs</DependentUpon>
@@ -102,8 +112,8 @@
     <EmbeddedResource Include="Start.resx">
       <DependentUpon>Start.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Time.resx">
-      <DependentUpon>Time.cs</DependentUpon>
+    <EmbeddedResource Include="SelectTime.resx">
+      <DependentUpon>SelectTime.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.config" />
     <None Include="packages.config" />
