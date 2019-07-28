@@ -26,7 +26,9 @@ namespace MyCinema
             m1 = movie_receiver[0];
             m2 = movie_receiver[1];
             m3 = movie_receiver[2];
-            picMovOne.Image = Image.FromFile(@"D:\MyCinema\resource\poster\Jisoo.jpg");
+            picMovOne.Image = Image.FromFile(@"D:\MyCinema\resource\poster\lionKing.jpg");
+            picMovTwo.Image = Image.FromFile(@"D:\MyCinema\resource\poster\Mulan.jpg");
+            picMovThree.Image = Image.FromFile(@"D:\MyCinema\resource\poster\onceuponatimeinhollywood.jpg");
         }
 
         private void PicMovOne_Click(object sender, EventArgs e)

@@ -10,20 +10,20 @@ using System.Windows.Forms;
 
 namespace MyCinema
 {
-    public partial class ManageMovie : Form
+    public partial class StaffManage : Form
     {
-        public ManageMovie()
+        public StaffManage()
         {
             InitializeComponent();
         }
 
-        private void ManageMovie_Load(object sender, EventArgs e)
+        private void StaffManage_Load(object sender, EventArgs e)
         {
             try
             {
                 string MyConnection2 = "Data Source=127.0.0.1;" + "Initial Catalog=cinema_ticket_system;" + "User id=root;" + "Password='';";
                 //Display query  
-                string Query = "SELECT * FROM movie";
+                string Query = "SELECT staff_id,name,email FROM staff";
                 MySqlConnection MyConn2 = new MySqlConnection(MyConnection2);
                 MySqlCommand MyCommand2 = new MySqlCommand(Query, MyConn2);
                 //  MyConn2.Open();  
