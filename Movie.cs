@@ -15,12 +15,12 @@ namespace MyCinema
             string entry = "Data Source=127.0.0.1;" + "Initial Catalog=cinema_ticket_system;" + "User id=root;" + "Password='';";
             connection = new MySqlConnection(entry);
         }
-        public void Insert(string name, string category, string theater)
+        public void Insert(string name, string category, string theater, string start, string end)
         {
             try
             {
 
-                string insert = "INSERT INTO movie(movie_name,movie_genre,theater_name) VALUES('" + name + "','" + category + "','" + theater + "')";
+                string insert = "INSERT INTO movie(movie_name,movie_genre,theater_name,startdate,enddate) VALUES('" + name + "','" + category + "','" + theater + "','"+start+"','"+end+"')";
                 connection.Open();
                 MySqlCommand command = new MySqlCommand(insert, connection);
                 MySqlDataReader reader = command.ExecuteReader();

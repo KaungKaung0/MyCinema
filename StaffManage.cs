@@ -53,10 +53,25 @@ namespace MyCinema
                 t.Start();
                 this.Close();
             }
+            if(form == "addstaff")
+            {
+                System.Threading.Thread t = new System.Threading.Thread(new System.Threading.ThreadStart(OpenAddStaff));
+                t.Start();
+                this.Close();
+            }
         }
         private static void OpenDashboard()
         {
             Application.Run(new Home());
+        }
+        private static void OpenAddStaff()
+        {
+            Application.Run(new AddStaff());
+        }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            CloseAndOpen("addstaff");
         }
     }
 }

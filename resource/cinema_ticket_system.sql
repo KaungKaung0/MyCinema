@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 28, 2019 at 06:31 PM
+-- Generation Time: Aug 29, 2019 at 02:41 PM
 -- Server version: 10.3.16-MariaDB
 -- PHP Version: 7.3.7
 
@@ -32,17 +32,20 @@ CREATE TABLE `movie` (
   `movie_id` int(11) NOT NULL,
   `movie_name` text COLLATE utf8_unicode_ci NOT NULL,
   `movie_genre` text COLLATE utf8_unicode_ci NOT NULL,
-  `theater_name` text COLLATE utf8_unicode_ci NOT NULL
+  `theater_name` text COLLATE utf8_unicode_ci NOT NULL,
+  `startdate` text COLLATE utf8_unicode_ci NOT NULL,
+  `enddate` text COLLATE utf8_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `movie`
 --
 
-INSERT INTO `movie` (`movie_id`, `movie_name`, `movie_genre`, `theater_name`) VALUES
-(1, 'Once Upon A Time In Hollywood', 'Drama/Thriller', 'Theater 1'),
-(2, 'Mulan', 'Adventure', 'Theater 2'),
-(3, 'The Lion King', 'Drama/Adventure', 'Theater 3');
+INSERT INTO `movie` (`movie_id`, `movie_name`, `movie_genre`, `theater_name`, `startdate`, `enddate`) VALUES
+(1, 'Once Upon A Time In Hollywood', 'Drama/Thriller', 'Theater 1', '', ''),
+(2, 'Mulan', 'Adventure', 'Theater 2', '', ''),
+(3, 'The Lion King', 'Drama/Adventure', 'Theater 3', '', ''),
+(4, 'The Avengers: End Game', 'Sci-Fi', 'Theater 2', '29 August 2019', '07 September 2019');
 
 -- --------------------------------------------------------
 
@@ -71,7 +74,10 @@ INSERT INTO `sale` (`sale_id`, `voucher_id`, `seat_no`, `movie_name`, `time`, `d
 (11, 3, 'A1', 'The Lion King', '9:30 AM', '28 July 2019', '1'),
 (12, 0, 'A2', 'The Lion King', '9:30 AM', '28 July 2019', '0'),
 (13, 4, 'A1', 'The Lion King', '12:30 PM', '28 July 2019', '1'),
-(14, 4, 'A2', 'The Lion King', '12:30 PM', '28 July 2019', '1');
+(14, 4, 'A2', 'The Lion King', '12:30 PM', '28 July 2019', '1'),
+(19, 5, 'A2', 'Mulan', '12:30 PM', '31 August 2019', '1'),
+(20, 6, 'A1', 'The Avengers: End Game', '6:30PM', '07 September 2019', '1'),
+(21, 6, 'A2', 'The Avengers: End Game', '6:30PM', '07 September 2019', '1');
 
 -- --------------------------------------------------------
 
@@ -113,7 +119,8 @@ CREATE TABLE `staff` (
 --
 
 INSERT INTO `staff` (`staff_id`, `name`, `email`, `password`) VALUES
-(1, 'Kaung', 'kaung@gmail.com', 'kaung');
+(1, 'Kaung', 'kaung@gmail.com', 'kaung'),
+(2, 'Hla Hla', 'hlahla@gmail.com', 'hlahla123');
 
 -- --------------------------------------------------------
 
@@ -139,7 +146,9 @@ INSERT INTO `voucher` (`voucher_id`, `date`, `movie_name`, `show_time`, `seat_no
 (1, '28 June 2019', 'The Lion King', '9:30 AM', 'A1,', 1, 3000),
 (2, '26 July 2019', 'The Lion King', '9:30 AM', 'A2,A1,', 2, 6000),
 (3, '28 July 2019', 'The Lion King', '9:30 AM', 'A1,', 1, 3000),
-(4, '28 July 2019', 'The Lion King', '12:30 PM', 'A1,A2,', 2, 6000);
+(4, '28 July 2019', 'The Lion King', '12:30 PM', 'A1,A2,', 2, 6000),
+(5, '31 August 2019', 'Mulan', '12:30 PM', 'A2,', 1, 3000),
+(6, '07 September 2019', 'The Avengers: End Game', '6:30PM', 'A1,A2,', 2, 6000);
 
 --
 -- Indexes for dumped tables
@@ -183,13 +192,13 @@ ALTER TABLE `voucher`
 -- AUTO_INCREMENT for table `movie`
 --
 ALTER TABLE `movie`
-  MODIFY `movie_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `movie_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `sale`
 --
 ALTER TABLE `sale`
-  MODIFY `sale_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `sale_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
 -- AUTO_INCREMENT for table `seat`
@@ -201,13 +210,13 @@ ALTER TABLE `seat`
 -- AUTO_INCREMENT for table `staff`
 --
 ALTER TABLE `staff`
-  MODIFY `staff_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `staff_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `voucher`
 --
 ALTER TABLE `voucher`
-  MODIFY `voucher_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `voucher_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

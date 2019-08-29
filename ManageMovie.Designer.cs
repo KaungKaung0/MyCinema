@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button2 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -47,6 +47,16 @@
             this.panel1.Size = new System.Drawing.Size(712, 450);
             this.panel1.TabIndex = 0;
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(12, 22);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(93, 32);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "Back to Home";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.Button2_Click);
+            // 
             // button1
             // 
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -60,6 +70,7 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "Add Movie";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // dataGridView1
             // 
@@ -74,16 +85,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(706, 380);
             this.dataGridView1.StandardTab = true;
             this.dataGridView1.TabIndex = 0;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(12, 22);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(93, 32);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Back to Home";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.Button2_Click);
             // 
             // ManageMovie
             // 

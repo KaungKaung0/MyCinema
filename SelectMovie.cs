@@ -29,6 +29,9 @@ namespace MyCinema
             picMovOne.Image = Image.FromFile(@"D:\MyCinema\resource\poster\lionKing.jpg");
             picMovTwo.Image = Image.FromFile(@"D:\MyCinema\resource\poster\Mulan.jpg");
             picMovThree.Image = Image.FromFile(@"D:\MyCinema\resource\poster\onceuponatimeinhollywood.jpg");
+            lblmovie1.Text = m1;
+            lblmovie2.Text = m2;
+            lblmovie3.Text = m3;
         }
 
         private void PicMovOne_Click(object sender, EventArgs e)

@@ -34,6 +34,9 @@
             this.picMovThree = new System.Windows.Forms.PictureBox();
             this.picMovTwo = new System.Windows.Forms.PictureBox();
             this.picMovOne = new System.Windows.Forms.PictureBox();
+            this.lblmovie1 = new System.Windows.Forms.Label();
+            this.lblmovie2 = new System.Windows.Forms.Label();
+            this.lblmovie3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picMovThree)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picMovTwo)).BeginInit();
@@ -60,6 +63,9 @@
             this.panel1.AutoSize = true;
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(32)))), ((int)(((byte)(63)))), ((int)(((byte)(255)))));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.lblmovie3);
+            this.panel1.Controls.Add(this.lblmovie2);
+            this.panel1.Controls.Add(this.lblmovie1);
             this.panel1.Controls.Add(this.btnExit);
             this.panel1.Controls.Add(this.picMovThree);
             this.panel1.Controls.Add(this.picMovTwo);
@@ -67,7 +73,7 @@
             this.panel1.Controls.Add(this.lblShowingNow);
             this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(780, 426);
+            this.panel1.Size = new System.Drawing.Size(780, 469);
             this.panel1.TabIndex = 1;
             // 
             // btnExit
@@ -113,11 +119,44 @@
             this.picMovOne.TabStop = false;
             this.picMovOne.Click += new System.EventHandler(this.PicMovOne_Click);
             // 
+            // lblmovie1
+            // 
+            this.lblmovie1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lblmovie1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblmovie1.Location = new System.Drawing.Point(22, 414);
+            this.lblmovie1.Name = "lblmovie1";
+            this.lblmovie1.Size = new System.Drawing.Size(201, 23);
+            this.lblmovie1.TabIndex = 6;
+            this.lblmovie1.Text = "label1";
+            this.lblmovie1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblmovie2
+            // 
+            this.lblmovie2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lblmovie2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblmovie2.Location = new System.Drawing.Point(285, 414);
+            this.lblmovie2.Name = "lblmovie2";
+            this.lblmovie2.Size = new System.Drawing.Size(201, 23);
+            this.lblmovie2.TabIndex = 7;
+            this.lblmovie2.Text = "label1";
+            this.lblmovie2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblmovie3
+            // 
+            this.lblmovie3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lblmovie3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblmovie3.Location = new System.Drawing.Point(549, 414);
+            this.lblmovie3.Name = "lblmovie3";
+            this.lblmovie3.Size = new System.Drawing.Size(198, 23);
+            this.lblmovie3.TabIndex = 8;
+            this.lblmovie3.Text = "label1";
+            this.lblmovie3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // SelectMovie
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 493);
             this.Controls.Add(this.panel1);
             this.Name = "SelectMovie";
             this.Text = "MyCinema";
@@ -140,6 +179,9 @@
         private System.Windows.Forms.PictureBox picMovThree;
         private System.Windows.Forms.PictureBox picMovTwo;
         private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Label lblmovie3;
+        private System.Windows.Forms.Label lblmovie2;
+        private System.Windows.Forms.Label lblmovie1;
     }
 }
 
